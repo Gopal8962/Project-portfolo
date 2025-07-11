@@ -10,6 +10,10 @@ A demo project simulating investor-related logic and layouts.
 ### 🔹 [Artificial Intelligence Privet](./ai-privet-project/index.html)
 An AI-based conceptual private project demonstration.
 
+### 🔹 [Demo Project](./Demo/index.html)
+A testing project folder containing a basic index.html page to verify GitHub Pages behavior.
+
 ---
 
 📌 **Note:** You can clone this repo and open individual project folders in a browser to explore.
+
