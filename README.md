@@ -4,10 +4,10 @@ Welcome to my project showcase hosted on GitHub. This repository contains some o
 
 ## 📁 Projects
 
-### 🔹 [Investor Project](./investor-project/index.html)
+### 🔹 [Investor Project](./investor%project/index.html)
 A demo project simulating investor-related logic and layouts.
 
-### 🔹 [Artificial Intelligence Privet](./ai-privet-project/index.html)
+### 🔹 [Artificial Intelligence Privet](./ai%privet%project/index.html)
 An AI-based conceptual private project demonstration.
 
 ### 🔹 [Demo Project](./Demo/index.html)
