@@ -14,7 +14,7 @@ An AI-based conceptual private project demonstration.
 ### 🔹 [Demo Project](./Demo/index.html)
 A testing project folder containing a basic index.html page to verify GitHub Pages behavior.
 
-### 🔹 [AI Document Automation](./AI-Document-Automation/index.html)
+### 🔹 [AI demo](./AI demo/index.html)
 A production-grade Azure-based clause extraction platform using Azure Computer Vision, Azure Functions, and Key Vault. Implements Responsible AI standards, RBAC, and CI/CD automation.
 
 ---
