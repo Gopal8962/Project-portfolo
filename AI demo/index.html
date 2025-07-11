@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Solution Design – Gopal Soni</title>
+</head>
+<body>
+    <h1>Artificial Intelligence – Solution Design Document</h1>
+    <p><strong>Author:</strong> Gopal Soni<br>
+    <strong>Date:</strong> 10/05/25<br>
+    <strong>Version:</strong> 1.0</p>
+
+    <h2>1. Customer Use Case & Project Scope</h2>
+    <p>Privet Venture has designed a smart document management system for law firms and legal departments. It automates clause extraction and reduces manual processing delays using Azure AI services.</p>
+
+    <h2>2. User Roles & Responsibilities</h2>
+    <ul>
+        <li>Azure Solution Architect – Architecture design and resource planning</li>
+        <li>AI Engineer – Integrated Computer Vision API and clause logic</li>
+        <li>Deployment Specialist – Provisioned Azure services and networking</li>
+        <li>Security Analyst – RBAC and network security</li>
+        <li>Legal Reviewer – Clause validation and UAT</li>
+    </ul>
+
+    <h2>3. Data Source & File Types</h2>
+    <p>Files include scanned contracts (PDF, TIFF) uploaded via a secure portal and Web UI.</p>
+
+    <h2>4. Ingestion Engine & Pipeline</h2>
+    <p>Documents are uploaded directly to Azure Blob Storage and processed via Azure Function App triggered on upload.</p>
+
+    <h2>5. Data Storage & Structure</h2>
+    <p>Raw files and OCR output are stored in Azure Blob. Clause metadata is stored in SQL on Azure VM.</p>
+
+    <h2>6. Encryption Methodology</h2>
+    <ul>
+        <li>AES-256 encryption for storage</li>
+        <li>Azure Key Vault for secrets</li>
+        <li>TLS 1.2 for all communications</li>
+    </ul>
+
+    <h2>7. Data Preparation & Processing Layer</h2>
+    <p>Uses Azure Computer Vision Read API and a rule-based logic engine to tag clauses and store results as structured metadata.</p>
+
+    <h2>8. Responsible AI Standard Alignment</h2>
+    <ul>
+        <li>Transparency – Logging per OCR/Clause output</li>
+        <li>Accountability – Entra ID traceability</li>
+        <li>Fairness – No demographic bias</li>
+        <li>Security – VNet isolation and RBAC</li>
+    </ul>
+
+    <h2>9. Impact Assessment Summary</h2>
+    <p>RAI-based review shows 70% manual effort saved and >95% clause tagging accuracy.</p>
+
+    <h2>10. Security Architecture</h2>
+    <ul>
+        <li>Network isolation with NSGs</li>
+        <li>Azure Key Vault credential protection</li>
+        <li>RBAC roles via Entra ID</li>
+        <li>Logging via Azure Monitor</li>
+    </ul>
+
+    <h2>11. Sizing & Performance</h2>
+    <p>Supports 500 contracts/day, OCR latency ~20s, function SLA under 5s.</p>
+
+    <h2>12. Monitoring & Diagnostics</h2>
+    <ul>
+        <li>Azure Monitor – Function health, errors</li>
+        <li>App Insights – Latency, failures</li>
+        <li>Key Vault – Secret logs</li>
+    </ul>
+
+    <h2>13. Cost Optimization</h2>
+    <ul>
+        <li>OCR – Pay-per-use</li>
+        <li>Storage – Lifecycle management</li>
+        <li>SQL VM – Auto-shutdown</li>
+    </ul>
+
+    <h2>14. AI Model/Service Selection</h2>
+    <p>Uses Azure Computer Vision Read API and rule-based logic. No ML training required.</p>
+
+    <h2>15. Inferencing & Deployment</h2>
+    <p>Blob-triggered Azure Function stores processed output for search/display.</p>
+
+    <h2>16. Automation</h2>
+    <p>Terraform for infrastructure, Key Vault for secrets, App Insights for monitoring.</p>
+
+    <h2>17. Azure AI Architecture Best Practices</h2>
+    <ul>
+        <li>Serverless design, secure VNet deployment</li>
+        <li>Pretrained APIs, rule-based logic, modular design</li>
+    </ul>
+
+    <h2>18. Physical Architecture Diagram</h2>
+    <p><i>Not included (image omitted)</i></p>
+
+    <h2>19. Capability Domain – Intelligent Application Solutions</h2>
+    <p>Focus on scalable document automation using Azure-native services.</p>
+
+    <hr>
+    <p><em>END OF DOCUMENT</em></p>
+</body>
+</html>
